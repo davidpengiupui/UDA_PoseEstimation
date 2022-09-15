@@ -3,6 +3,7 @@ from .hand_3d_studio import Hand3DStudio, Hand3DStudioAll
 from .rendered_hand_pose_mt import RenderedHandPose_mt
 from .hand_3d_studio_mt import Hand3DStudio_mt, Hand3DStudioAll_mt
 from .freihand import FreiHand
+from .freihand_mt import FreiHand_mt, FreiHandAll_mt
 
 from .real_animal_all import real_animal_all
 from .real_animal_all_mt import real_animal_all_mt
