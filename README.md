@@ -92,6 +92,11 @@ SURREAL2H36M-SF
 CUDA_VISIBLE_DEVICES=2 python train_sf.py ../RegDA_tokenpose/data/SURREAL ../RegDA_tokenpose/data/Human36M -s SURREAL -t Human36M --target-train Human36M_mt --log logs/s2h_exp/syn2real --debug --seed 0 --lambda_c 1 --pretrain-epoch 40  --rotation_stu 60 --shear_stu -30 30 --translate_stu 0.05 0.05 --scale_stu 0.6 1.3 --color_stu 0.25 --blur_stu 0 --rotation_tea 60 --shear_tea -30 30 --translate_tea 0.05 0.05 --scale_tea 0.6 1.3 --color_tea 0.25 --blur_tea 0 -b 32 --mask-ratio 0.5 --k 1 --occlude-rate 0.5 --occlude-thresh 0.9
 ```
 
+SURREAL2LSP-SF
+```
+CUDA_VISIBLE_DEVICES=0,1 python train_sf.py ../RegDA_tokenpose/data/SURREAL ../RegDA_tokenpose/data/LSP -s SURREAL -t LSP --target-train LSP_mt --log logs/s2l_exp/syn2real --debug --seed 0 --lambda_c 1 --pretrain-epoch 40  --rotation_stu 60 --shear_stu -30 30 --translate_stu 0.05 0.05 --scale_stu 0.6 1.3 --color_stu 0.25 --blur_stu 0 --rotation_tea 60 --shear_tea -30 30 --translate_tea 0.05 0.05 --scale_tea 0.6 1.3 --color_tea 0.25 --blur_tea 0 -b 32 --mask-ratio 0.5 --k 1 --occlude-rate 0.5 --occlude-thresh 0.9
+```
+
 
 **UDA Hand Pose Estimation**
 
